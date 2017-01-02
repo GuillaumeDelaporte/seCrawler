@@ -15,7 +15,7 @@ class searResultPages:
         self.searchEngineUrl = SearchEngines[self.searchEngine]
         self.totalPage = totalPage
         self.keyword = keyword
-        print "total page:{0}".format(self.totalPage)
+        print("total page:{0}".format(self.totalPage))
 
     def __iter__(self):
         return  self
