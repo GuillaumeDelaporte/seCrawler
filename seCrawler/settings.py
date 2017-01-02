@@ -16,7 +16,14 @@ NEWSPIDER_MODULE = 'seCrawler.spiders'
 
 ITEM_PIPELINES = {'seCrawler.pipelines.SespiderPipeline': 1}
 
-USER_AGENT = "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36"
+DOWNLOAD_DELAY=10
+
+#USER_AGENT = "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36"
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
+}
 
 DEPTH_LIMIT = 1
 
