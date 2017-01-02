@@ -4,6 +4,7 @@ A scrapy project can crawl search result of Google/Bing/Baidu
 ### prerequisite
 python 2.7 and scrapy is needed.
 
+You also need some packages, run `pip install -r requirements.txt` to add them.
 
 ## commands
 
